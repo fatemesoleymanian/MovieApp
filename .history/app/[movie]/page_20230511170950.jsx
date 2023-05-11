@@ -26,7 +26,7 @@ export default async function MovieDetails({ params }) {
                 <h2 className="bg-blue-600 inline-block py-2 my-2 px-4 rounded text-sm">{res.budget}$</h2>
                 <h1 className="bold">Generes :</h1>
                 {res?.genres?.map(genre => (
-                    <h2 className="bg-zinc-400 inline-block py-2 my-2 mx-1 px-4 rounded text-sm">{genre?.name}</h2>
+                    <h2 className="bg-zinc-400 inline-block py-2 my-2 mx-1 px-4 rounded text-sm">{genre.name}</h2>
                 ))
                 }
                 <Image src={'https://image.tmdb.org/t/p/original' + res.backdrop_path} className='my-12 w-full'
