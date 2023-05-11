@@ -14,8 +14,8 @@ export default async function Home() {
     <main>
       <div className='grid gap-16 grid-cols-fluid'>
         {res?.results?.map(movie => (
-          <Movie title={movie?.title} id={movie?.id} key={movie?.id} poster_path={movie?.poster_path}
-            release_date={movie?.release_date} />
+          <Movie title={movie.title} id={movie.id} key={movie.id} poster_path={movie.poster_path}
+            release_date={movie.release_date} />
         ))}
       </div>
     </main>
